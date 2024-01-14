@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">BeerApp</string>
+    <string name="welcome_text">Ready for a drink</string>
+    <string name="group_name"><![CDATA[Alexis & Lilian\nIRA-4]]></string>
+
+    <string name="title_authentication">Welcome</string>
+    <string name="description_authentication">Welcome to the ultimate beer experience, where every sip is a trip to hop heaven. Don\'t worry, be hoppy! Life\'s too short for bad brews, so let\'s raise a glass to the ale-some times ahead!</string>
+    <string name="button_text_authentication_github">Log in with GitHub</string>
+    <string name="button_text_authentication_anonymous">Log in without account</string>
+
+    <string name="popup_button">Close</string>
+
+    <string name="button_text_create_beer">Create a Beer</string>
+    <string name="button_text_go_to_keywords">Keywords by OpenAI</string>
+
+    <string name="hint_name_beer">Name</string>
+    <string name="hint_url_beer">Enter the URL of the beer image</string>
+    <string name="hint_description_beer">Description</string>
+    <string name="hint_taste_beer">Taste</string>
+    <string name="wheat_type">Wheat</string>
+    <string name="ipa_type">IPA</string>
+    <string name="stout_type">Stout</string>
+    <string name="ale_type">Ale</string>
+    <string name="lager_type">Lager</string>
+    <string name="hint_origin_beer">Origin</string>
+    <string name="hint_price_beer">Price</string>
+    <string name="hint_alcohol_degree_beer">Alcohol degree</string>
+
+    <string name="hint_text">Bloc text</string>
+    <string name="button_text_keywords">Extract keywords</string>
+    <string name="credit_text">Powered by</string>
+
+    <!-- Description part for accessibility -->
+    <string name="button_next_accessibility">Interactive button saying \'Ready for a drink\' that starts the beer selection process.</string>
+
+    <string name="app_icon_accessibility">Logo of BeerApp, with a frothy beer mug.</string>
+    <string name="github_icon_accessibility">Logo of Github</string>
+    <string name="button_authentication_accessibility">Interactive button saying \'Log in with GitHub\' that starts the authentication process with Github.</string>
+
+    <string name="button_popup_accessibility">Interactive button saying \'Close\' that closes the popup.</string>
+
+    <string name="image_beer_accessibility">Image of the beer</string>
+    <string name="country_beer_accessibility">Search and display the country flag from the country name.</string>
+    <string name="button_create_beer_accessibility">Interactive button saying \'Create Beer\' that create a new beer.</string>
+
+    <string name="text_zone_input_accessibility">Text input field for entering content to analyze for keywords</string>
+    <string name="button_keywords_accessibility">Interactive button saying \'Extract keywords\' that starts the keywords extraction from the text.</string>
+    <string name="openai_icon_accessibility">Logo of OpenAI</string>
+</resources>

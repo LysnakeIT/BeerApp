@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/create_beer_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout">
+
+    <ImageView
+        android:id="@+id/right_corner"
+        android:layout_width="167dp"
+        android:layout_height="144dp"
+        android:background="@drawable/right_ellipse"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_corner"
+        android:layout_width="167dp"
+        android:layout_height="144dp"
+        android:background="@drawable/left_ellipse"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/form_zone"
+        android:layout_width="680dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/zone_shape"
+        android:clickable="false"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/name_icon_input_zone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/desciption_taste_input_zone"
+        app:layout_constraintEnd_toEndOf="@id/form_zone"
+        app:layout_constraintStart_toStartOf="@id/form_zone"
+        app:layout_constraintTop_toTopOf="@id/form_zone">
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_name_beer"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextImageUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_url_beer"
+            android:importantForAutofill="no"
+            android:inputType="textUri" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/desciption_taste_input_zone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/form_zone"
+        app:layout_constraintStart_toStartOf="@id/form_zone"
+        app:layout_constraintTop_toBottomOf="@id/name_icon_input_zone">
+
+        <EditText
+            android:id="@+id/description_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_description_beer"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage" />
+
+        <EditText
+            android:id="@+id/taste_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_taste_beer"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_input_zone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/origin_input_zone"
+        app:layout_constraintEnd_toEndOf="@id/form_zone"
+        app:layout_constraintStart_toStartOf="@id/form_zone"
+        app:layout_constraintTop_toBottomOf="@id/desciption_taste_input_zone">
+
+        <RadioGroup
+            android:id="@+id/type_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/type_input_lager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lager_type" />
+
+            <RadioButton
+                android:id="@+id/type_input_ale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ale_type" />
+
+            <RadioButton
+                android:id="@+id/type_input_stout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/stout_type" />
+
+            <RadioButton
+                android:id="@+id/type_input_ipa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ipa_type" />
+
+            <RadioButton
+                android:id="@+id/type_input_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wheat_type" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/origin_input_zone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/degree_price_input_zone"
+        app:layout_constraintEnd_toEndOf="@id/form_zone"
+        app:layout_constraintStart_toStartOf="@id/form_zone"
+        app:layout_constraintTop_toBottomOf="@id/type_input_zone">
+
+        <EditText
+            android:id="@+id/origin_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_origin_beer"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/origin_flag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/country_beer_accessibility" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/degree_price_input_zone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/form_zone"
+        app:layout_constraintEnd_toEndOf="@id/form_zone"
+        app:layout_constraintStart_toStartOf="@id/form_zone"
+        app:layout_constraintTop_toBottomOf="@id/origin_input_zone">
+
+        <EditText
+            android:id="@+id/alcohol_degree_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_alcohol_degree_beer"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/price_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_price_beer"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_create_beer"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rectangle_shape"
+        android:contentDescription="@string/button_create_beer_accessibility"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_zone" />
+
+    <TextView
+        android:id="@+id/button_create_beer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/button_text_create_beer"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_create_beer"
+        app:layout_constraintEnd_toEndOf="@+id/button_create_beer"
+        app:layout_constraintStart_toStartOf="@+id/button_create_beer"
+        app:layout_constraintTop_toTopOf="@+id/button_create_beer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

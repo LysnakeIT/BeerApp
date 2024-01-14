@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1054197627355",
+    "project_id": "beerapp-6d6c9",
+    "storage_bucket": "beerapp-6d6c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054197627355:android:2a174ed1948f5d1f1c4ffe",
+        "android_client_info": {
+          "package_name": "alexis.lilian.esaip.beerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeoX8M3w-auXOq6l0wSl1rwJVQZtmcp0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

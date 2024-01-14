@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/beer_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout">
+
+    <ImageView
+        android:id="@+id/left_corner"
+        android:layout_width="167dp"
+        android:layout_height="144dp"
+        android:background="@drawable/left_ellipse"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/right_corner"
+        android:layout_width="167dp"
+        android:layout_height="144dp"
+        android:background="@drawable/right_ellipse"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_beer" />
+
+    <TextView
+        android:id="@+id/taste_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_beer" />
+
+    <View
+        android:id="@+id/cercle_type"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/select_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taste_beer" />
+
+    <TextView
+        android:id="@+id/type_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cercle_type"
+        app:layout_constraintEnd_toEndOf="@+id/cercle_type"
+        app:layout_constraintStart_toStartOf="@+id/cercle_type"
+        app:layout_constraintTop_toTopOf="@+id/cercle_type" />
+
+    <View
+        android:id="@+id/cercle_degree"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="90dp"
+        android:background="@drawable/select_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cercle_type" />
+
+    <TextView
+        android:id="@+id/degree_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cercle_degree"
+        app:layout_constraintEnd_toEndOf="@+id/cercle_degree"
+        app:layout_constraintStart_toStartOf="@+id/cercle_degree"
+        app:layout_constraintTop_toTopOf="@+id/cercle_degree" />
+
+    <View
+        android:id="@+id/cercle_price"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/select_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cercle_degree" />
+
+    <TextView
+        android:id="@+id/price_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cercle_price"
+        app:layout_constraintEnd_toEndOf="@+id/cercle_price"
+        app:layout_constraintStart_toStartOf="@+id/cercle_price"
+        app:layout_constraintTop_toTopOf="@+id/cercle_price" />
+
+    <ImageView
+        android:id="@+id/image_beer"
+        android:layout_width="202dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="184dp"
+        android:contentDescription="@string/image_beer_accessibility"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

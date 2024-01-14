@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keywords_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout">
+
+    <ImageView
+        android:id="@+id/right_corner"
+        android:layout_width="167dp"
+        android:layout_height="144dp"
+        android:background="@drawable/right_ellipse"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_corner"
+        android:layout_width="167dp"
+        android:layout_height="144dp"
+        android:background="@drawable/left_ellipse"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/credit_text"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_openai"
+        android:layout_width="92dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/openai_icon_accessibility"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_credit"
+        app:srcCompat="@drawable/openai_icon" />
+
+    <ImageButton
+        android:id="@+id/button_extract"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rectangle_shape"
+        android:contentDescription="@string/button_keywords_accessibility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_zone_extract" />
+
+    <TextView
+        android:id="@+id/button_extract_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/button_text_keywords"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_extract"
+        app:layout_constraintEnd_toEndOf="@+id/button_extract"
+        app:layout_constraintStart_toStartOf="@+id/button_extract"
+        app:layout_constraintTop_toTopOf="@+id/button_extract" />
+
+    <ImageView
+        android:id="@+id/text_zone_extract"
+        android:layout_width="370dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/zone_shape"
+        android:clickable="false"
+        android:contentDescription="@string/text_zone_input_accessibility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hint_text_zone_extract"
+        android:layout_width="350dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/hint_text"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_zone_extract"
+        app:layout_constraintEnd_toEndOf="@+id/text_zone_extract"
+        app:layout_constraintStart_toStartOf="@+id/text_zone_extract"
+        app:layout_constraintTop_toTopOf="@+id/text_zone_extract" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
